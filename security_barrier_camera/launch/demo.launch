@@ -1,0 +1,13 @@
+<launch>
+  <group ns ="demo1">
+     <node name="security_barrier_camera" pkg="security_barrier_camera" type="security_barrier_camera_node" >
+     <remap from="/camera/image_raw" to= "/video1/camera/image_raw"/>
+     </node>
+  </group>
+
+  <!-- <group ns ="demo2">
+     <node name="security_barrier_camera" pkg="security_barrier_camera" type="security_barrier_camera_node" >
+     <remap from="~camera/image_raw" to= "/video2/camera/image_raw"/>
+     </node>
+  </group> -->
+</launch>
